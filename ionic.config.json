@@ -1,0 +1,8 @@
+{
+  "name": "le bouton rouge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "c5039638"
+}
