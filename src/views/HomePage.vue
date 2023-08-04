@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Inbox</ion-title>
+        <ion-title>le bouton rouge</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -13,12 +13,12 @@
 
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Inbox</ion-title>
+          <ion-title size="large">le bouton rouge</ion-title>
         </ion-toolbar>
       </ion-header>
 
       <ion-list>
-        <MessageListItem v-for="message in messages" :key="message.id" :message="message" />
+        <HistoryListItem v-for="history in historys" :key="history.id" :history="history" />
       </ion-list>
     </ion-content>
   </ion-page>
@@ -35,11 +35,11 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/vue';
-import MessageListItem from '@/components/MessageListItem.vue';
-import { getMessages, Message } from '@/data/messages';
+import HistoryListItem from '@/components/HistoryListItem.vue';
+import { History, getHistorys } from '@/data/history';
 import { ref } from 'vue';
 
-const messages = ref<Message[]>(getMessages());
+const historys = ref<History[]>(getHistorys());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
