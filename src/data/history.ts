@@ -11,7 +11,7 @@ const historys: History[] = [
     name: 'le petit chaperon rouge',
     id: 'little-red-riding-hood',
     description: 'le petit chaperon rouge vertion RED BUTTON',
-    icon: '@/data/history/little-red-riding-hood/icon.png',
+    icon: 'src/data/history/little-red-riding-hood/icon.png',
     type: 'text'
   }
 ];

@@ -1,7 +1,7 @@
 <template>
-  <ion-item v-if="history" :routerLink="'/history/' + history.id" :detail="false" class="list-item">
+  <ion-item v-if="history" :routerLink="'/history/'+ history.type + '/' + history.id" :detail="false" class="list-item">
     <div slot="start">
-      <img :src="history.icon" />
+      <img :src="history.icon"  alt="history icon"  width="50" height="50" style="margin-left: 32px;"/>
     </div>
     <ion-label class="ion-text-wrap">
       <h1>
